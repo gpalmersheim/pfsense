@@ -95,17 +95,22 @@
 		<lan>
 			<enable></enable>
 			<if>ue0</if>
-			<descr><![CDATA[LAN]]></descr>
+			<descr><![CDATA[Home]]></descr>
 			<spoofmac></spoofmac>
 			<ipaddr>10.0.0.1</ipaddr>
 			<subnet>24</subnet>
 		</lan>
 		<opt1>
 			<if>ue1</if>
-			<descr><![CDATA[OPT1]]></descr>
+			<descr><![CDATA[BRR]]></descr>
+			<spoofmac></spoofmac>
 			<ipaddr>192.168.2.1</ipaddr>
 			<subnet>24</subnet>
-			<spoofmac></spoofmac>
+			<gateway></gateway>
+			<ipaddrv6></ipaddrv6>
+			<subnetv6></subnetv6>
+			<gatewayv6></gatewayv6>
+			<enable></enable>
 		</opt1>
 	</interfaces>
 	<staticroutes>
@@ -147,8 +152,8 @@
 		<opt1>
 			<enable></enable>
 			<range>
-				<from>192.168.2.50</from>
-				<to>192.168.2.199</to>
+				<from>192.168.2.100</from>
+				<to>192.168.2.200</to>
 			</range>
 			<staticmap>
 				<mac>2c:59:e5:ec:83:f9</mac>
@@ -619,8 +624,9 @@
 		<dnssecstripped></dnssecstripped>
 	</unbound>
 	<revision>
-		<time>1513456535</time>
-		<username>admin@10.0.0.110</username>
+		<time>1516247264</time>
+		<description><![CDATA[(system): opt1 IP configuration from console menu]]></description>
+		<username>(system)</username>
 	</revision>
 	<dyndnses></dyndnses>
 	<cert>
